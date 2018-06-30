@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+	<meta charset="UTF-8">
+	<title>strašan mjuz</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onload="makeFilterButtons()">
+
+	<!-- NAVIGACIJA, TASTERI SE GENERISU U JAVASCRIPTu -->
+
+	<div id="navigation">
+		<div id="filterButtons"></div>
+	</div>
+
+	<!-- SADRZAJ -->
+
+	<div class="row">
+		<div class="rock">
+			<a href="https://www.youtube.com/watch?v=Z04SHdWAMFU">
+				<img src="img/reignwolf-various-live-recordings.jpg" alt="reignwolf various live recordings album">
+				<p>Reignwolf</p>
+				<p class="song">Electric love</p>
+			</a>
+		</div>
+		<div class="rock">
+			<a href="https://www.youtube.com/watch?v=JDG2m5hN1vo">
+				<img src="img/fleetwood-mac-rumours.jpg" alt="fleetwood mac rumours album">
+				<p>Fleetwood Mac</p>
+				<p class="song">The chain</p>
+			</a>
+		</div>
+		<div class="pop">
+			<a href="https://www.youtube.com/watch?v=rVeMiVU77wo">
+				<img src="img/Alt-J-An-Awesome-Wave.png" alt="alt-J an awesome wave album">
+				<p>alt-J</p>
+				<p class="song">Breezeblocks</p>
+			</a>
+		</div>
+		<div class="pop">
+			<a href="https://www.youtube.com/watch?v=7Nplwr5simI">
+				<img src="img/ella-henderson-chapter-one.jpg" alt="ella henderson chapter one album">
+				<p>Ella Henderson</p>
+				<p class="song">Mirror man</p>
+			</a>
+		</div>
+		<div class="pop">
+			<a href="https://www.youtube.com/watch?v=fvq7PG_6sPk">
+				<img src="img/Elemental-Tijelo.jpg" alt="elemental tijelo album">
+				<p>Elemental</p>
+				<p class="song">Tijelo pamti</p>
+			</a>
+		</div>
+		<div class="pop">
+			<a href="https://www.youtube.com/watch?v=fvq7PG_6sPk">
+				<img src="img/Elemental-Tijelo.jpg" alt="elemental tijelo album">
+				<p>Elemental</p>
+				<p class="song">Tijelo pamti</p>
+			</a>
+		</div>
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=Hr2m1VzTAI8'>
+				<img src='img/The-Sword-Age-Of-Winters.jpg' alt="the sword age of winters album">
+				<p>The Sword</p>
+				<p class='song'>Freya</p>
+			</a>
+		</div>
+		<div class='hip-hop'>
+			<a href='https://www.youtube.com/watch?v=1Wl3rM3AlC0'>
+				<img src='img/Outkast-Aquemini.jpg' alt="outkast aquemini album">
+				<p>Outkast</p>
+				<p class='song'>Aquemini</p>
+			</a>
+		</div>
+		<!-- <div class='rock'>
+			<a href='https://www.youtube.com/watch?v=tSde6k1pXDQ'>
+				<img src='img/'>
+				<p>Santo & Johnny</p>
+				<p class='song'>Moonlight serenade</p>
+			</a>
+		</div> -->
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=tbU3zdAgiX8'>
+				<img src='img/The-Everly-Brothers-No4.jpg' alt="the everly brothers no4 album">
+				<p>Everly Brothers</p>
+				<p class='song'>All I Have To Do Is Dream</p>
+			</a>
+		</div>
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=YBRCvVpknvg'>
+				<img src='img/Santo-And-Johnny.jpg' alt="santo and johnny album">
+				<p>Santo & Johnny</p>
+				<p class='song'>Sleep walk</p>
+			</a>
+		</div>
+		<div class='electro'>
+			<a href='https://www.youtube.com/watch?v=djxv_zoQtaE'>
+				<img src='img/shakta-silicon-trip.jpg' alt="shakta silicon trip album">
+				<p>Shakta</p>
+				<p class='song'>Inner polarity</p>
+			</a>
+		</div>
+		<div class='hip-hop'>
+			<a href='https://www.youtube.com/watch?v=DWNJYleU7r8'>
+				<img src='img/ginuwine-the-senior.jpg' alt="ginuwine the senior album">
+				<p>Ginuwine</p>
+				<p class='song'>Hell yeah</p>
+			</a>
+		</div>
+		<div class='hip-hop'>
+			<a href='https://www.youtube.com/watch?v=YAJ9ArSlUG0'>
+				<img src='img/scarface-the-diary.jpg' alt="scarface the diary album">
+				<p>Scarface</p>
+				<p class='song'>No tears</p>
+			</a>
+		</div>
+		<div class='hip-hop'>
+			<a href='https://www.youtube.com/watch?v=eF8c3BjFWsw'>
+				<img src='img/the-ressurection-geto-boys.jpg' alt="geto boys the ressurection album">
+				<p>Geto Boys</p>
+				<p class='song'>Still</p>
+			</a>
+		</div>
+		<div class='hip-hop'>
+			<a href='https://www.youtube.com/watch?v=kdBYiie8UCc'>
+				<img src='img/the-ressurection-geto-boys.jpg' alt="geto boys the ressurection album">
+				<p>Geto Boys</p>
+				<p class='song'>Geto boys & girls</p>
+			</a>
+		</div>
+		<div class='electro'>
+			<a href='https://www.youtube.com/watch?v=uWs1ORyxrL8'>
+				<img src='img/celt-islam-baghdad.jpg' alt="celt islam baghdad">
+				<p>Celt Islam</p>
+				<p class='song'>Tribernetikz</p>
+			</a>
+		</div>
+		<div class='electro'>
+			<a href='https://www.youtube.com/watch?v=lxjwcAEsufE'>
+				<img src='img/solar-fields-movements.jpg' alt="solar fields movements album">
+				<p>Solar Fields</p>
+				<p class='song'>Sol</p>
+			</a>
+		</div>
+		<div class='blues'>
+			<a href='https://www.youtube.com/watch?v=6SP5JHLqXM8'>
+				<img src='img/albert-king-ill-play-the-blues-for-you.jpg' alt="albert king i'll play the blues for you album">
+				<p>Albert King</p>
+				<p class='song'>I'll play the blues for you</p>
+			</a>
+		</div>
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=lg7yjlF5-8A'>
+				<img src='img/she-wants-revenge-take-the-world.jpg' alt="she wants revenge take the world album">
+				<p>She Wants Revenge</p>
+				<p class='song'>Take the world</p>
+			</a>
+		</div>
+		<div class='pop'>
+			<a href='https://www.youtube.com/watch?v=KWZGAExj-es'>
+				<img src='img/sia-elastic-heart.jpg' alt="sia elastic heart album">
+				<p>Sia</p>
+				<p class='song'>Elastic heart</p>
+			</a>
+		</div>
+		<div class='pop'>
+			<a href='https://www.youtube.com/watch?v=2fsAcZ1xiJ4'>
+				<img src='img/big-boi-boomiverse.jpg' alt="big boi boomiverse">
+				<p>Big Boi</p>
+				<p class='song'>Chocolate</p>
+			</a>
+		</div>
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=tJpo8UwSDL4'>
+				<img src='img/reignwolf-seven-deadly-sins.jpg' alt="reignwolf break the chain album">
+				<p>Reignwolf</p>
+				<p class='song'>Break the chain</p>
+			</a>
+		</div>
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=2mQrtnGPgKk'>
+				<img src='img/klinika.jpg' alt="klinka album">
+				<p>Klinika</p>
+				<p class='song'>Zrno prašine</p>
+			</a>
+		</div>
+		<div class='blues'>
+			<a href='https://www.youtube.com/watch?v=NiUmfB5nc0U'>
+				<img src='img/Donny-Hathaway-I-Love-You-More-Than-Youll-Ever-Know.jpg' alt="donny hathaway i love you more than youll ever know album">
+				<p>Donny Hathaway</p>
+				<p class='song'>I Love You More Than You'll Ever Know</p>
+			</a>
+		</div>
+		<div class='pop'>
+			<a href='https://www.youtube.com/watch?v=HijvesSMSQA'>
+				<img src='img/'>
+				<p>Sting</p>
+				<p class='song'>Stolen car</p>
+			</a>
+		</div>
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=W5quXqf57N0'>
+				<img src='img/'>
+				<p>Dža ili bu</p>
+				<p class='song'>Ustani i kreni</p>
+			</a>
+		</div>
+		<div class='pop'>
+			<a href='https://www.youtube.com/watch?v=nfs8NYg7yQM'>
+				<img src='img/'>
+				<p>Charlie Puth</p>
+				<p class='song'>Attention</p>
+			</a>
+		</div>
+		<div class='pop'>
+			<a href='https://www.youtube.com/watch?v=Gc71AmT_b2k'>
+				<img src='img/'>
+				<p>Bazzi</p>
+				<p class='song'>Mine</p>
+			</a>
+		</div>
+		<div class='hip-hop'>
+			<a href='https://www.youtube.com/watch?v=1hgWeOq8aFY'>
+				<img src='img/'>
+				<p>Mala Rodriguez</p>
+				<p class='song'>Jugadoras, jugadores</p>
+			</a>
+		</div>
+		<div class='pop'>
+			<a href='https://www.youtube.com/watch?v=nPEo3eIHAGE'>
+				<img src='img/'>
+				<p>Knez</p>
+				<p class='song'>Srce od meda</p>
+			</a>
+		</div>
+		<div class='pop'>
+			<a href='https://www.youtube.com/watch?v=1W5BA0lDVLM'>
+				<img src='img/'>
+				<p>Mahmut Orhan</p>
+				<p class='song'>6 days</p>
+			</a>
+		</div>
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=VvKjpGP6P5Y'>
+				<img src='img/'>
+				<p>The Black Angels</p>
+				<p class='song'>Young men dead</p>
+			</a>
+		</div>
+		<div class='blues'>
+			<a href='https://www.youtube.com/watch?v=2XITBuWNROk'>
+				<img src='img/'>
+				<p>Gary Clark Jr.</p>
+				<p class='song'>When my train pulls in</p>
+			</a>
+		</div>
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=-3SZVOFVqzU'>
+				<img src='img/'>
+				<p>ZZ top</p>
+				<p class='song'>If I could only flag her down</p>
+			</a>
+		</div>
+		<div class='rock'>
+			<a href='https://www.youtube.com/watch?v=ykZcKFjx_OQ'>
+				<img src='img/'>
+				<p>Earthless</p>
+				<p class='song'>Sonic prayer</p>
+			</a>
+		</div>
+		<div class='blues'>
+			<a href='https://www.youtube.com/watch?v=CI7I9OumKhU'>
+				<img src='img/'>
+				<p>Albert King</p>
+				<p class='song'>Breaking up somebody's home</p>
+			</a>
+		</div>
+
+	</div>
+</body>
+</html>
