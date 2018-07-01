@@ -35,10 +35,11 @@ img {
 	width: 180px;
 	border: 1px solid white;
 }
-.row {
+.wrap {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: flex-end;
 }
 a {
 	position: relative;
@@ -66,7 +67,7 @@ p {
 	background-color: black;
 	color: white;
 	position: absolute;
-	top: -1.95rem;
+	top: -2.15rem;
 	left: 1rem;
 	text-transform: lowercase;
 	margin: 0;
