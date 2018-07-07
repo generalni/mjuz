@@ -16,7 +16,6 @@ body {
 	text-align: center;
 }
 div {
-	overflow: hidden;
 	margin-bottom: 1rem;
 	box-sizing: border-box;
 }
@@ -62,19 +61,22 @@ button:hover {
 	color: white;
 	opacity: 1;
 }
-p {
+p {	
+	width: 80%;
+	box-sizing: border-box;
 	display: inline-block;
 	background-color: black;
 	color: white;
 	position: absolute;
-	top: -2.15rem;
+	top: -2.35rem;
 	left: 1rem;
 	text-transform: lowercase;
 	margin: 0;
-	padding: 0 .5rem 0 .5rem;
+	padding-left: .5rem;
+	text-align: left;
 }
 p.song {
-	top: -1rem;
+	top: -1.2rem;
 	left: 1rem;
 	font-size: .75rem;
 }
