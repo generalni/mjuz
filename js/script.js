@@ -30,6 +30,6 @@ function filterSongs(a) {
 	// ... THEN SHOW ONLY THOSE WITH FILTER "ON"
 
 	for (j = 0; j < filter.length; j++) {
-		$("."+filter[j]+"").css("display", "block");
+		$("."+filter[j]+"").css("display", "inline-block");
 	}
 }
