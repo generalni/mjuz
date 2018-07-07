@@ -12,6 +12,9 @@ body {
 	background-attachment: fixed;
 	overflow-y: scroll;
 }
+.wrap {
+	text-align: center;
+}
 div {
 	overflow: hidden;
 	margin-bottom: 1rem;
@@ -20,6 +23,9 @@ div {
 div#filterButtons {
 	text-align: center;
 	margin: 0;
+}
+div.rock, div.pop, div.electro, div.hip-hop, div.blues {
+	display: inline-block;
 }
 button {
 	padding: 1rem;
@@ -34,12 +40,7 @@ img {
 	box-sizing: border-box;
 	width: 180px;
 	border: 1px solid white;
-}
-.wrap {
-	box-sizing: border-box;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-end;
+	margin: .2rem;
 }
 a {
 	position: relative;
@@ -63,7 +64,6 @@ button:hover {
 }
 p {
 	display: inline-block;
-	width: 100%;
 	background-color: black;
 	color: white;
 	position: absolute;
@@ -71,7 +71,7 @@ p {
 	left: 1rem;
 	text-transform: lowercase;
 	margin: 0;
-	padding-left: .5rem;
+	padding: 0 .5rem 0 .5rem;
 }
 p.song {
 	top: -1rem;
